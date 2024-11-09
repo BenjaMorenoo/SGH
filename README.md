@@ -1,40 +1,27 @@
-# Astro Starter Kit: Basics
+# 🏨 Sistema de Gestión de Hostal (SGH)
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este proyecto corresponde al desarrollo de un Sistema de Gestión de Hostal (SGH) para el hostal "Doña María Gracia", diseñado para optimizar y centralizar la administración de operaciones. La plataforma es una aplicación web que facilita la gestión de reservas, habitaciones, servicios de comedor, proveedores, y facturación, con el objetivo de mejorar la eficiencia operativa y apoyar la toma de decisiones mediante análisis e informes.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## ✨ Funcionalidades Principales
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 👥 **Gestión de Clientes**: Creación de perfiles de clientes, tanto individuales como corporativos, para un seguimiento detallado.
+- 🛏️ **Administración de Habitaciones y Reservas**: Control del estado, disponibilidad y asignación de habitaciones.
+- 🍽️ **Servicios de Comedor**: Registro y gestión de platos, precios y minutas semanales.
+- 📦 **Control de Proveedores**: Administración de datos de contacto y términos de contratos.
+- 💸 **Facturación y Órdenes de Compra**: Generación y gestión de facturas y pedidos a proveedores, con opciones de filtrado y búsqueda.
+- 📊 **Informes y Análisis**: Creación de informes personalizados en formatos PDF y Excel sobre ocupación de habitaciones, servicios y desempeño de proveedores.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🔧 Características Adicionales
 
-## 🚀 Project Structure
+- 📱 **Interfaz Adaptativa**: Compatibilidad con dispositivos móviles.
+- 🔒 **Seguridad**: Registro de actividades mediante logs y gestión de acceso mediante roles de usuario.
+- 📈 **Escalabilidad y Mantenibilidad**: Capacidad de crecimiento para adaptarse a nuevas demandas y actualizaciones.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 👤 Perfiles de Usuario
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
+- 🧑‍💼 **Administrador**: Acceso completo al sistema, con capacidad de generar informes y gestionar usuarios.
+- 🧑‍✈️ **Recepcionista**: Responsable de reservas, check-in/check-out, y coordinación de servicios.
+- 👥 **Cliente y Proveedor**: Acceso a información de reservas y pedidos, respectivamente, facilitando una experiencia de autogestión.
 
 ## 🧞 Commands
 
@@ -48,7 +35,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
