@@ -1,0 +1,140 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<li class="link-card">
+  <a>
+    <h2>{title}</h2>
+    <p>{body}</p>
+    <div class="inputs-wrapper">
+      <div class="input-container">
+        <label for="arrival-date" class="placeholder">Llegada</label>
+        <input type="date" id="arrival-date" class="date-input" />
+      </div>
+      <div class="input-container">
+        <label for="departure-date" class="placeholder">Salida</label>
+        <input type="date" id="departure-date" class="date-input" />
+      </div>
+    </div>
+    <button>Buscar 🔍</button>
+  </a>
+</li>
+
+<style>
+  .link-card {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    background-image: none;
+    background-size: 400%;
+    border-radius: 12px; /* Bordes más redondeados para un look más suave */
+    background-position: 100%;
+    transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: inset 0 0 0 2px rgba(75, 74, 74, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    flex-direction: column; /* Organiza el contenido en columna */
+  }
+
+  .link-card > a {
+    width: 100%;
+    text-decoration: none;
+    line-height: 1.4;
+    padding: 20px;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    background-color: #e6eaf3;
+    opacity: 0.9;
+    text-align: center; /* Centra el texto dentro del contenedor */
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Título más grande */
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  button {
+    margin-top: 1rem;
+    background-color: #c94040;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ec4040;
+    color: white;
+  }
+
+  /* Wrapper para los inputs */
+  .inputs-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center; /* Centra los inputs */
+  }
+
+  /* Contenedor individual para cada label y input */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Estilos para los labels */
+  .input-container label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Estilos para los inputs de fecha */
+  .date-input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+    width: 200px; /* Tamaño de los inputs */
+  }
+
+  .date-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+
+  .date-input::placeholder {
+    color: #888;
+    opacity: 0.8;
+  }
+</style>
